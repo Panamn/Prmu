@@ -61,11 +61,6 @@ public class MainActivity extends AppCompatActivity implements StateAdapter.OnSt
 
     @Override
     public void onStateClick(State state, int position) {
-        StateAdapter.OnStateClickListener stateClickListener = new StateAdapter.OnStateClickListener() {
-            @Override
-            public void onStateClick(State state, int position) {
-                Toast.makeText(getApplicationContext(), "Выбран: " + state.getName(), Toast.LENGTH_SHORT).show();
-            }
-        };
+        Toast.makeText(getApplicationContext(), "Выбран: " + state.getName(), Toast.LENGTH_SHORT).show();
     }
 }
